@@ -1,4 +1,3 @@
-
 use rand::prelude::*;
 pub fn generate_random_array(len: usize) -> Vec<u32> {
     let mut rng = rand::thread_rng();
