@@ -1,8 +1,8 @@
-mod sort;
+extern crate bubblesort;
 
 fn main() {
-    let mut nums = sort::sortcore::generate_random_array(100);
+    let mut nums = bubblesort::arraygenerator::generate_random_array(100);
     println!("unsorted: {:?}", nums);
-    sort::sortcore::bubblesort(&mut nums);
+    bubblesort::sort::bubblesort(&mut nums);
     println!("sorted: {:?}", nums);
 }
